@@ -1,0 +1,4 @@
+#!/bin/bash
+export TSMC180_HOME="/opt/libs/tsmc180/extracted"
+rm -rf ./results/*
+dc_shell-t -f ./dc_scripts/synthesis.tcl | tee ./results/synthesis.log
